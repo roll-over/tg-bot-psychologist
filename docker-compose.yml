@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  tg_psychologist_roll_over:
+    build: .
+    container_name: tg_psychologist_roll_over
+    working_dir: /src
+    command: node main.mjs
+    env_file:
+      - .env
